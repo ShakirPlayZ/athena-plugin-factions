@@ -26,7 +26,7 @@ export class FactionPlayerFuncs {
      * @memberof FactionPlayerFuncs
      */
     static isAdmin(player: alt.Player): boolean {
-        const isAdmin = Athena.player.permission.hasPermission(player, 'admin');
+        const isAdmin = Athena.player.permission.hasAccountPermission(player, 'admin');
         if (!isAdmin) {
             return false;
         }
